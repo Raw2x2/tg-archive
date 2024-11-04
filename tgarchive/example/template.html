@@ -211,5 +211,13 @@
 	</div><!-- container -->
 </div>
 <script src="static/main.js"></script>
+<script>
+window.onload = function() {
+var pag=document.querySelectorAll('.pagination')
+for(let item of pag ){
+item.scrollTo(0,document.querySelector('.active').offsetTop-item.offsetHeight)
+}
+}
+</script>
 </body>
 </html>
